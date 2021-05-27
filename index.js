@@ -1,17 +1,19 @@
-const cards = [];
+const cards = []
 
-function writeCards(names, eventName) {
-  for (let i = 0; i < names.length; i++) {
-    cards.push(`Thank you, ${names[i]}, for the wonderful ${eventName} gift!`);
+function writeCards( names, event ) {
+ 
+  for ( let i = 0; i < names.length; i++ ) {
+    cards.push( `Thank you, ${names[i]}, for the wonderful ${event} gift!` )
   }
-
-  return cards;
+  return cards
 }
 
-function countDown() {
-  let countDown = 10;
-  while (countDown >= 0) {
-    console.log(countDown);
+
+function countDown(number) {
+  while (number > 0) {
+    console.log(number);
     countDown--;
   }
+ 
+  return number;
 }
